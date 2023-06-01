@@ -1,7 +1,8 @@
 //Global variable for token in order to perform authenticated GET's
 
 //PUT YOUR TOKEN HERE TO AVOID COOLDOWNS
-var token = 'TOKEN-HERE';
+//LOW-LEVEL TOKEN FOR 24 HOURS
+var token = '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';
 
 
 $(document).ready(function() {
