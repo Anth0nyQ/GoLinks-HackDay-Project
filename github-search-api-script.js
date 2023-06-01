@@ -2,7 +2,7 @@
 
 //PUT YOUR TOKEN HERE TO AVOID COOLDOWNS
 //LOW-LEVEL TOKEN FOR 24 HOURS
-var token = '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';
+var token = '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';
 
 
 $(document).ready(function() {
