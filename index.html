@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Github Search API Interface </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <br>
+            <h1 style="text-align: center;">
+                Github User Stats Interface
+            </h1>
+            
+        
+            <!-- Username Search Parameter | FORM-ID: user-repo-stats -->
+            <form id="user-repo-stats" autocomplete="off">
+            <!-- Code for searching for users without exact username (optional) -->
+                <div class="form-group">
+                    <!-- Username Search Text | ID: search-username -->
+                    <input type="text" class="form-control" id="search-username" placeholder="Search By Username">
+                </div>
+                <div class="form-group">
+                    <button id="search-by-username" class="btn btn-danger btn-block">
+                        Search by Username
+                    </button>
+                </div>
+            <!-- End of Code for searching for users without exact username (optional) -->
+                
+                <br> <br>
+           
+                <div class="form-group">
+                    <!-- Username Repo Results | ID: username -->
+                    <input type="text" class="form-control" id="username" placeholder="Search Username for Repo Stats">
+                </div>
+                <div class="form-group">
+                    <label for="include-forks" style="display: inline-block;">Include Forks?:</label>
+                    <input type="checkbox" id="include-forks" style="display: inline-block; margin-left: 5px;">
+                </div>
+                <div class="form-group">
+                    <button id="search-user-stats" class="btn btn-danger btn-block">
+                        Get Users Stats
+                    </button>
+                </div>
+
+                <!-- Search Separation -->
+                <br>
+
+
+            </form>
+            <!-- pre tag to preserve formatting -->
+            <pre id="search-results"></pre>
+            <div id="profile-results"></div>
+        </div>
+    </body>
+    <script src="github-search-api-script.js"></script>
+</html>
